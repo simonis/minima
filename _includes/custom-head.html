@@ -4,3 +4,73 @@
   1. Head over to https://realfavicongenerator.net/ to add your own favicons.
   2. Customize default _includes/custom-head.html in your source directory and insert the given code snippet.
 {% endcomment %}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/assets/css/github_simonis.css">
+<link rel="stylesheet" href="/assets/css/rouge-github.css">
+
+<style>
+/* This will be inserted AFTER the default stylesheets and overide the values defined there! */
+
+/* Draw highlighted lines in source code listings in bold */
+.highlight code .hll {
+  font-weight: bold;
+}
+/* Prevent output from being too light in console listing blocks */
+.highlight code .go {
+  font-weight: normal;
+  color: #302d2d;
+}
+/* Draw the console prompt in a fancy color */
+.highlight code .gp {
+  color: #d25f0b;
+}
+
+/* Do not draw a background color and frame around inline code elements */
+:not(pre) > code {
+  color: inherit;
+  background-color: #f8f8f8;
+  padding: 0;
+  font-size: 0.8125em;
+}
+code {
+  color: inherit;
+  background-color: inherit;
+  -webkit-border-radius: inherit;
+  border-radius: inherit;
+}
+code.callout {
+  border: none;
+}
+/* Do not increase the font size for listing blocks on bigger screens */
+@media only screen and (min-width: 768px) {
+  .literalblock pre, .literalblock pre[class], .listingblock pre, .listingblock pre[class] {
+    font-size: 0.8125em;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .literalblock pre, .literalblock pre[class], .listingblock pre, .listingblock pre[class] {
+    font-size: 0.8125em;
+  }
+}
+/* No extra bottom margin and padding */
+#content {
+  margin-bottom: 0;
+}
+.sect1 {
+  padding-bottom: 0;
+}
+@media only screen and (min-width: 768px) {
+  #content {
+    margin-bottom: 0;
+  }
+  .sect1 {
+    padding-bottom: 0;
+  }
+}
+
+/* Styling callouts (for ":icons: font") */
+.conum[data-value] {
+  background-color: #4183c4;
+}
+</style>

@@ -198,17 +198,17 @@ pre {
  * Wrapper
  */
 .wrapper {
-  max-width: calc(#{$content-width} - (#{$spacing-unit}));
+  max-width: calc(#{$content-width});
   margin-right: auto;
   margin-left: auto;
-  padding-right: $spacing-unit / 2;
-  padding-left: $spacing-unit / 2;
+  padding-right: $lr-padding-unit / 2;
+  padding-left: $lr-padding-unit / 2;
   @extend %clearfix;
 
   @media screen and (min-width: $on-large) {
-    max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
+    max-width: calc(#{$content-width});
+    padding-right: $lr-padding-unit;
+    padding-left: $lr-padding-unit;
   }
 }
 
@@ -242,7 +242,6 @@ pre {
   height: 16px;
   display: inline-block;
   fill: currentColor;
-  padding: 5px 3px 2px 5px;
   vertical-align: text-bottom;
 }
 
